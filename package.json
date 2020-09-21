@@ -62,7 +62,7 @@
     "pack": "oclif-dev pack",
     "postpack": "rm -f oclif.manifest.json",
 
-    "bump": "git add . && git commit --m \"bumped version\" && npm version patch",
+    "bump": "npm version patch",
     "preversion": "npm run lint && npm test",
     "postversion": "oclif-dev readme && git add README.md && git add . && git commit --m \"bumped version\" && git push",
 
