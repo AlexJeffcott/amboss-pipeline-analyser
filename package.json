@@ -1,12 +1,12 @@
 {
-  "name": "@alexjeffcott/typescript-cli-template",
-  "description": "typescript-cli-template",
-  "version": "1.1.0",
+  "name": "@alexjeffcott/amboss-pipeline-analyser",
+  "description": "amboss-pipeline-analyser",
+  "version": "1.0.0",
   "author": "Alex Jeffcott",
   "bin": {
     "test-npm-cli": "./bin/run"
   },
-  "bugs": "https://github.com/alexjeffcott/typescript-cli-template/issues",
+  "bugs": "https://github.com/alexjeffcott/amboss-pipeline-analyser/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -39,29 +39,33 @@
     "/lib",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/alexjeffcott/typescript-cli-template#README.md",
+  "homepage": "https://github.com/alexjeffcott/amboss-pipeline-analyser#README.md",
   "license": "MIT",
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "typescriptclitemplate",
+    "bin": "analyse-pipeline",
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexJeffcott/typescript-cli-template.git"
+    "url": "git+https://github.com/AlexJeffcott/amboss-pipeline-analyser.git"
   },
   "scripts": {
-    "bump": "npm version patch",
-    "lint": "eslint . --ext .ts --config .eslintrc",
-    "postpack": "rm -f oclif.manifest.json",
-    "posttest": "npm run lint",
-    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --reporter=json --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
-    "postversion": "oclif-dev readme && git add README.md && git add . && git commit --m \"bumped version\" && git push",
+    "posttest": "npm run lint",
+    "lint": "eslint . --ext .ts --config .eslintrc",
+
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "pack": "oclif-dev pack",
+    "postpack": "rm -f oclif.manifest.json",
+
+    "bump": "git add . && git commit --m \"bumped version\" && npm version patch",
     "preversion": "npm run lint && npm test",
+    "postversion": "oclif-dev readme && git add README.md && git add . && git commit --m \"bumped version\" && git push",
+
     "publish": "npm publish --access public"
   },
   "types": "lib/index.d.ts"

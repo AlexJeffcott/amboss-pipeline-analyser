@@ -1,42 +1,42 @@
-typescript-cli-template
+amboss-pipeline-analyser
 =======================
 
 example multi-command CLI built with typescript
 
-[![Version](https://img.shields.io/npm/v/@oclif/example-multi-ts.svg)](https://npmjs.org/package/@alexjeffcott/typescript-cli-template)
-[![CircleCI](https://circleci.com/gh/AlexJeffcott/typescript-cli-template/tree/master.svg?style=shield)](https://circleci.com/gh/AlexJeffcott/typescript-cli-template/tree/master)
-[![Codecov](https://codecov.io/gh/alexjeffcott/typescript-cli-template/branch/master/graph/badge.svg)](https://codecov.io/gh/alexjeffcott/typescript-cli-template)
-[![Downloads/week](https://img.shields.io/npm/dw/@alexjeffcott/typescript-cli-template.svg)](https://npmjs.org/package/@alexjeffcott/typescript-cli-template)
-[![License](https://img.shields.io/npm/l/@alexjeffcott/typescript-cli-template.svg)](https://github.com/alexjeffcott/typescript-cli-template/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/@oclif/example-multi-ts.svg)](https://npmjs.org/package/@alexjeffcott/amboss-pipeline-analyser)
+[![CircleCI](https://circleci.com/gh/AlexJeffcott/amboss-pipeline-analyser/tree/master.svg?style=shield)](https://circleci.com/gh/AlexJeffcott/amboss-pipeline-analyser/tree/master)
+[![Codecov](https://codecov.io/gh/alexjeffcott/amboss-pipeline-analyser/branch/master/graph/badge.svg)](https://codecov.io/gh/alexjeffcott/amboss-pipeline-analyser)
+[![Downloads/week](https://img.shields.io/npm/dw/@alexjeffcott/amboss-pipeline-analyser.svg)](https://npmjs.org/package/@alexjeffcott/amboss-pipeline-analyser)
+[![License](https://img.shields.io/npm/l/@alexjeffcott/amboss-pipeline-analyser.svg)](https://github.com/alexjeffcott/amboss-pipeline-analyser/blob/master/package.json)
 
 ## Give it a name
-Here this can be found as `typescript-cli-template`
+Here this can be found as `amboss-pipeline-analyser`
 
 ## Define a command
-Here this can be found as `typescriptclitemplate`
+Here this can be found as `analyse-pipeline`
 
 ## Set the version
 Ensure the version in package.json is `1.0.0` as a starting point. 
 Subsequent versions should be bumped using the appropriate npm scripts.
 
 ## Make it a github repo
-See [here](https://github.com/AlexJeffcott/typescript-cli-template).
+See [here](https://github.com/AlexJeffcott/amboss-pipeline-analyser).
 
-Here this can be found as `AlexJeffcott/typescript-cli-template`
+Here this can be found as `AlexJeffcott/amboss-pipeline-analyser`
 
 ## Set up codecov.io
-See [here](https://codecov.io/gh/AlexJeffcott/typescript-cli-template).
+See [here](https://codecov.io/gh/AlexJeffcott/amboss-pipeline-analyser).
 
 This is very easy to set up - just create an account, or login, link the repo and copy the token.
 
 ## Put it in CI/CD
-See [here](https://app.circleci.com/pipelines/github/AlexJeffcott/typescript-cli-template).
+See [here](https://app.circleci.com/pipelines/github/AlexJeffcott/amboss-pipeline-analyser).
 
 This project uses circleci. This is very easy to set up - just create an account, or login, link the repo and tell it to use the config that already exists.
 Go to `project settings/Environment Variables` and add `CODECOV_TOKEN` with the token gleaned from codecov.io above.
 
 ## Make it an npm package
-Here this can be found as `@alexjeffcott/typescript-cli-template`
+Here this can be found as `@alexjeffcott/amboss-pipeline-analyser`
 NB this must be unique in npm registry, otherwise you will get confusing/misleading error messages.
 
 #### Sign in to npm and publish
@@ -49,30 +49,30 @@ You must have an npm account, and the user must be able to create/publish packag
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @alexjeffcott/typescript-cli-template
-$ typescriptclitemplate COMMAND
+$ npm install -g @alexjeffcott/amboss-pipeline-analyser
+$ analyse-pipeline COMMAND
 running command...
-$ typescriptclitemplate (-v|--version|version)
-@alexjeffcott/typescript-cli-template/1.1.0 darwin-x64 node-v12.18.3
-$ typescriptclitemplate --help [COMMAND]
+$ analyse-pipeline (-v|--version|version)
+@alexjeffcott/amboss-pipeline-analyser/1.0.0 darwin-x64 node-v12.18.3
+$ analyse-pipeline --help [COMMAND]
 USAGE
-  $ typescriptclitemplate COMMAND
+  $ analyse-pipeline COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`typescriptclitemplate goodbye [FILE]`](#typescriptclitemplate-goodbye-file)
-* [`typescriptclitemplate hello [FILE]`](#typescriptclitemplate-hello-file)
-* [`typescriptclitemplate help [COMMAND]`](#typescriptclitemplate-help-command)
+* [`analyse-pipeline goodbye [FILE]`](#analyse-pipeline-goodbye-file)
+* [`analyse-pipeline hello [FILE]`](#analyse-pipeline-hello-file)
+* [`analyse-pipeline help [COMMAND]`](#analyse-pipeline-help-command)
 
-## `typescriptclitemplate goodbye [FILE]`
+## `analyse-pipeline goodbye [FILE]`
 
 describe the command here
 
 ```
 USAGE
-  $ typescriptclitemplate goodbye [FILE]
+  $ analyse-pipeline goodbye [FILE]
 
 OPTIONS
   -f, --force
@@ -80,15 +80,15 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/goodbye.ts](https://github.com/AlexJeffcott/typescript-cli-template/blob/v1.1.0/src/commands/goodbye.ts)_
+_See code: [src/commands/goodbye.ts](https://github.com/AlexJeffcott/amboss-pipeline-analyser/blob/v1.0.0/src/commands/goodbye.ts)_
 
-## `typescriptclitemplate hello [FILE]`
+## `analyse-pipeline hello [FILE]`
 
 describe the command here
 
 ```
 USAGE
-  $ typescriptclitemplate hello [FILE]
+  $ analyse-pipeline hello [FILE]
 
 OPTIONS
   -f, --force
@@ -100,15 +100,15 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/AlexJeffcott/typescript-cli-template/blob/v1.1.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/AlexJeffcott/amboss-pipeline-analyser/blob/v1.0.0/src/commands/hello.ts)_
 
-## `typescriptclitemplate help [COMMAND]`
+## `analyse-pipeline help [COMMAND]`
 
-display help for typescriptclitemplate
+display help for analyse-pipeline
 
 ```
 USAGE
-  $ typescriptclitemplate help [COMMAND]
+  $ analyse-pipeline help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
