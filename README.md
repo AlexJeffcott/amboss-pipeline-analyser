@@ -53,7 +53,7 @@ $ npm install -g @alexjeffcott/typescript-cli-template
 $ typescriptclitemplate COMMAND
 running command...
 $ typescriptclitemplate (-v|--version|version)
-@alexjeffcott/typescript-cli-template/1.0.1 darwin-x64 node-v12.18.3
+@alexjeffcott/typescript-cli-template/1.1.0 darwin-x64 node-v12.18.3
 $ typescriptclitemplate --help [COMMAND]
 USAGE
   $ typescriptclitemplate COMMAND
@@ -80,7 +80,7 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/goodbye.ts](https://github.com/AlexJeffcott/typescript-cli-template/blob/v1.0.1/src/commands/goodbye.ts)_
+_See code: [src/commands/goodbye.ts](https://github.com/AlexJeffcott/typescript-cli-template/blob/v1.1.0/src/commands/goodbye.ts)_
 
 ## `typescriptclitemplate hello [FILE]`
 
@@ -100,7 +100,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/AlexJeffcott/typescript-cli-template/blob/v1.0.1/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/AlexJeffcott/typescript-cli-template/blob/v1.1.0/src/commands/hello.ts)_
 
 ## `typescriptclitemplate help [COMMAND]`
 
