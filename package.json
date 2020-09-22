@@ -1,7 +1,7 @@
 {
   "name": "@alexjeffcott/amboss-pipeline-analyser",
   "description": "amboss-pipeline-analyser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Alex Jeffcott",
   "bin": {
     "analyse-pipeline": "./bin/run"
