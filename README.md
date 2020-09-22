@@ -62,7 +62,7 @@ $ npm install -g @alexjeffcott/amboss-pipeline-analyser
 $ analyse-pipeline COMMAND
 running command...
 $ analyse-pipeline (-v|--version|version)
-@alexjeffcott/amboss-pipeline-analyser/1.0.1 darwin-x64 node-v12.18.3
+@alexjeffcott/amboss-pipeline-analyser/1.0.2 darwin-x64 node-v12.18.3
 $ analyse-pipeline --help [COMMAND]
 USAGE
   $ analyse-pipeline COMMAND
@@ -89,7 +89,7 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/goodbye.ts](https://github.com/AlexJeffcott/amboss-pipeline-analyser/blob/v1.0.1/src/commands/goodbye.ts)_
+_See code: [src/commands/goodbye.ts](https://github.com/AlexJeffcott/amboss-pipeline-analyser/blob/v1.0.2/src/commands/goodbye.ts)_
 
 ## `analyse-pipeline hello [FILE]`
 
@@ -105,11 +105,11 @@ OPTIONS
   -n, --name=name  name to print
 
 EXAMPLE
-  $ test-npm-cli hello
+  $
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/AlexJeffcott/amboss-pipeline-analyser/blob/v1.0.1/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/AlexJeffcott/amboss-pipeline-analyser/blob/v1.0.2/src/commands/hello.ts)_
 
 ## `analyse-pipeline help [COMMAND]`
 
