@@ -58,12 +58,12 @@
     "posttest": "npm run lint",
     "lint": "eslint . --ext .ts --config .eslintrc",
     "bump": "git add . && git commit --m \"pre-bump\" && npm version patch",
-    "_preversion": "npm run lint && npm test",
+    "_preversion": "npm test",
     "postversion": "oclif-dev readme && git add . && git commit --m \"bumped version\" && git push",
     "publish": "npm publish --access public",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "_pack": "oclif-dev pack --targets=node-v12.18.3-linux-x64",
-    "postpack": "rm -f oclif.manifest.json"
+    "_postpack": "rm -f oclif.manifest.json"
   },
   "types": "lib/index.d.ts"
 }
